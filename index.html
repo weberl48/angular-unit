@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js'></script>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="myApp.js">
+
+    </script>
+    <title></title>
+  </head>
+  <body ng-controller="MainCtrl">
+    <input type="text" name="student" id="student" ng-model="student_name">
+    <br>
+    <h1>{{student_name}}</h1>
+    <div ng-show="student_name=='Paco'">
+      <h1>Hidden Div</h1>
+    </div>
+    <br>
+    <input type="text" name="" id="" ng-model="ammount">
+    <br>
+    <span>{{ammount | currency}}</span>
+    <br>
+<!--     tag: `{{1 + 6}}` -->
+    <input type="text" name="name" ng-model="searcher" />
+    <div ng-repeat="fruit in fruits | filter:searcher">
+        <li>{{fruit}}</li>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ -->

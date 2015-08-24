@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unit 1</title>
+    <!-- <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('[name=auto]').addEventListener('input', function (e) {
+        document.querySelector('h1').innerHTML = e.target.value
+      })
+    })
+    </script> -->
+  </head>
+  <body>
+     tag: `{{1 + 6}}`
+     	<input type="text" placeholder="What is your name" ng-model="name">
+      	<h1>My name is: {{name}}</h1>
+  </body>
+</html>
+<!-- Questions:
+1 Why learn Angular JS over other frameworks like Ember, Backbone, Knockout, etc?
+2 People have some very strong opinions about Angular.  What are 3 common complaints people have about Angular?
+3 Is Angular an MVC framework?
+4 Why did I say jQuery is "sort of" a dependency of Angular? Does it depend on it or not?!
+5 Read the docs for `ng-app`. What is it and what does it do?
+6 What does `ng` stand for?
+
+    Answers:
+1 Angular takes less lines of code over other frameworks and doesn't use setters and getters for data binging. In general Angular is easier to understand except when getting into Directives
+2 The documentation on angluar needs improvment, basics of angular are easy but then it becomes difficult, scopes are difficult to debug.
+3 yes
+4 angular uses JQLite this removes any dependencies. Angular will use the full jquery library if it is loaded before angular. In most cases jquery is not needed
+5 the ngApp directive defines the root element of the applicaiton typically placed on the body or html tags. Ng stands for angular it is what all of the built in directives prefix with
