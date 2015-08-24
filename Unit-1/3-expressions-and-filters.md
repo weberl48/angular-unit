@@ -29,7 +29,7 @@ We can use built-in filters to format our long number. The syntax to use a filte
 Let's try using the built-in `currency` filter to display the above numbers as a price:
 
 ```
-{{3.14159265359 | currency}}
+{{3.14159265359 | currency : "€"}}
 ```
 
 Notice that this filter does 2 things for us: it rounds the data to 2 decimal places and prepends a dollar sign.
